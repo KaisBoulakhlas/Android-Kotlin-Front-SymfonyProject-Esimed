@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Lebonangle</string>
+    <string name="price">Price :</string>
+    <string name="contenu">Contenu :</string>
+    <string name="categorie">Catégorie :</string>
+    <string name="photos">Photos :</string>
+    <string name="charger">Charger ...</string>
+    <string name="ajouter">Ajouter</string>
+    <string name="pictures_s">pictures(s)</string>
+    <string name="categorie_label">Catégorie n ° :</string>
+    <string name="nom">Nom :</string>
+    <string name="annonce_num">Annonce n ° :</string>
+    <string name="titre">Titre :</string>
+    <string name="auteur">Auteur :</string>
+    <string name="email">Email :</string>
+    <string name="details">DETAILS</string>
+    <string name="description">Description:</string>
+    <string name="prix">Prix :</string>
+    <string name="date_de_publication">Date de publication :</string>
+    <string name="photos_maj">PHOTOS</string>
+    <string name="ajouter_maj">AJOUTER</string>
+    <string name="categories">CATEGORIES</string>
+    <string name="cliquez_sur_une_cat_gorie_pour_acc_der_ses_annonces">(cliquez sur une catégorie pour accéder à ses annonces)</string>
+    <string name="aucunes_annonces_pour_cette_cat_gorie">Aucunes annonces pour cette catégorie .</string>
+</resources>

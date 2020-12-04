@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.AdvertCreateActivity"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:title="Ajouter une annonce"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/teal_200"
+            app:popupTheme="@style/Theme.AppCompat" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        tools:ignore="UselessParent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/advert_create_card"
+            android:layout_height="485dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp"
+            android:layout_width="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/teal_200"
+                android:padding="30dp">
+
+                <TextView
+                    android:id="@+id/advert_title"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/leckerli_one"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignBaseline="@+id/advert_value_title"
+                    android:layout_height="wrap_content"
+                    android:text = "@string/titre"
+                    />
+
+
+                <EditText
+                    android:id="@+id/advert_value_title"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/advert_title"
+                    />
+
+                <TextView
+                    android:id="@+id/advert_author"
+                    android:layout_below="@+id/advert_title"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/leckerli_one"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="30dp"
+                    android:layout_alignBaseline="@+id/advert_value_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text = "@string/auteur"/>
+
+                <EditText
+                    android:id="@+id/advert_value_author"
+                    android:layout_below="@+id/advert_value_title"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/advert_author"
+                    />
+
+                <TextView
+                    android:id="@+id/advert_email"
+                    android:layout_below="@+id/advert_author"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/leckerli_one"
+                    android:layout_alignBaseline="@+id/advert_value_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text = "@string/email"/>
+
+
+                <EditText
+                    android:id="@+id/advert_value_email"
+                    android:layout_below="@+id/advert_value_author"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:inputType="textEmailAddress"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/advert_email"
+                    />
+
+                <TextView
+                    android:id="@+id/advert_price"
+                    android:layout_below="@+id/advert_email"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/leckerli_one"
+                    android:layout_marginTop="30dp"
+                    android:layout_alignBaseline="@+id/advert_value_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text = "@string/price"/>
+
+
+                <EditText
+                    android:id="@+id/advert_value_price"
+                    android:layout_below="@+id/advert_value_email"
+                    android:layout_width="100dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="numberDecimal"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/advert_price"
+                    />
+
+                <TextView
+                    android:id="@+id/advert_content"
+                    android:layout_below="@+id/advert_price"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/leckerli_one"
+                    android:layout_marginTop="30dp"
+                    android:layout_alignBaseline="@+id/advert_value_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text = "@string/contenu"/>
+
+
+                <EditText
+                    android:id="@+id/advert_value_content"
+                    android:layout_below="@+id/advert_value_price"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/advert_content"
+                 />
+
+                <TextView
+                    android:id="@+id/advert_category"
+                    android:layout_below="@+id/advert_content"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/leckerli_one"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="30dp"
+                    android:layout_alignBaseline="@+id/spinner_category_advert_create"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text = "@string/categorie"/>
+
+
+                <Spinner
+                    android:id="@+id/spinner_category_advert_create"
+                    android:layout_below="@+id/advert_value_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/advert_category"
+              />
+
+                <TextView
+                    android:id="@+id/advert_upload"
+                    android:layout_below="@+id/advert_category"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/leckerli_one"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="30dp"
+                    android:layout_alignBaseline="@+id/btn_upload_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text = "@string/photos"/>
+
+                <Button
+                    android:id="@+id/btn_upload_image"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/spinner_category_advert_create"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/leckerli_one"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/charger"
+                    android:layout_toEndOf="@+id/advert_upload" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_create_advert"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/leckerli_one"
+                android:layout_marginTop="55dp"
+                android:layout_marginStart="140dp"
+                android:layout_height="wrap_content"
+                android:text="@string/ajouter"
+                android:layout_gravity="bottom"/>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</LinearLayout>
+
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/images"
+    tools:context=".activity.AdvertActivity"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_notadverts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+        android:text="@string/aucunes_annonces_pour_cette_cat_gorie"
+        android:fontFamily="@font/leckerli_one"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="395dp"
+        android:layout_height="525dp"
+        android:id="@+id/recycler_view_adverts"
+        tools:ignore="MissingConstraints" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_adverts"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:indeterminateTint="@color/black"
+        android:indeterminate="true"
+        android:minHeight="50dp"
+        android:minWidth="200dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="80dp"
+        style="?android:attr/progressBarStyleHorizontal"
+            tools:layout_editor_absoluteY="100dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

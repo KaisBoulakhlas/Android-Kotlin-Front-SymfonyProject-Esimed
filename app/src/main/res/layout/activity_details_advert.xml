@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.AdvertDetailsActivity"
+    android:background="@drawable/images"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/progress_bar_adverts_details"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:indeterminateTint="@color/black"
+        android:indeterminate="true"
+        android:minHeight="50dp"
+        android:minWidth="200dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="80dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        tools:layout_editor_absoluteY="100dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/linearlayout_details"
+        android:layout_marginTop="30dp"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:cardBackgroundColor="@color/blue"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:fontFamily="@font/leckerli_one"
+                android:text="@string/details"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:fontFamily="@font/leckerli_one"
+                android:layout_height="wrap_content"
+                android:text="@string/titre"
+             />
+
+            <TextView
+                android:id="@+id/txt_value_title"
+                android:fontFamily="@font/leckerli_one"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+             />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/leckerli_one"
+                android:layout_height="wrap_content"
+                android:text="@string/auteur"
+             />
+
+            <TextView
+                android:id="@+id/txt_value_author"
+                android:fontFamily="@font/leckerli_one"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_width="wrap_content">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/leckerli_one"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+            />
+
+            <TextView
+                android:id="@+id/txt_value_email"
+                android:fontFamily="@font/leckerli_one"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+             />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_width="wrap_content">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:fontFamily="@font/leckerli_one"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+            />
+
+            <TextView
+                android:id="@+id/txt_value_content"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/leckerli_one"
+                android:layout_height="wrap_content"
+             />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:fontFamily="@font/leckerli_one"
+                android:text="@string/prix"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_value_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:fontFamily="@font/leckerli_one" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/leckerli_one"
+                android:textSize="15sp"
+                android:text="@string/date_de_publication"
+            />
+
+            <TextView
+                android:id="@+id/text_published_at"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/leckerli_one"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+            />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="20dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="30dp"
+            app:cardBackgroundColor="@color/blue"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:fontFamily="@font/leckerli_one"
+                android:text="@string/photos_maj"
+                />
+        </androidx.cardview.widget.CardView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_pictures"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            android:layout_height="match_parent"
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
